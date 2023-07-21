@@ -13,7 +13,7 @@
 #You should have received a copy of the GNU General Public License
 #along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-class CreateQueryWrapperQueries < ActiveRecord::Migration
+class CreateQueryWrapperQueries < ActiveRecord::Migration[5.1]
   def change
     create_table :query_wrapper_queries do |t|
       t.column :query_id, :integer, null: false

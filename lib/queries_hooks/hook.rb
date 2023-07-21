@@ -14,7 +14,7 @@
 #along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 module QueriesHooks
-	class QueriesHooksHook < Redmine::Hook::ViewListener
+	class Hook < Redmine::Hook::ViewListener
 		#Add the content of queries_views/_queries_bottom.html.erb to sidebar layout
 		render_on :view_issues_sidebar_queries_bottom, :partial => 'queries_views/queries_bottom'
 		render_on :view_issues_index_bottom, :partial => 'queries_views/index_bottom'

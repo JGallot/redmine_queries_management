@@ -17,7 +17,7 @@ class QueryWrapperQueryController < ApplicationController
   unloadable
 
   #Check permissions before create
-  before_filter :validate_create, :only => [:create]
+  before_action :validate_create, :only => [:create]
 
   def index
   end

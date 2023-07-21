@@ -14,7 +14,7 @@
 #along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 require 'redmine'
-require_dependency 'queries_hooks/hook' #Apply views modifications
+require File.expand_path('../lib/queries_hooks/hook', __FILE__)
 
 Rails.configuration.to_prepare do
   unless QueriesHelper.included_modules.include?(QueriesHelperPatch)
